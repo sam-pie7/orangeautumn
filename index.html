@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--
+
+Name: Samantha Jameson
+Date: 11/16/2024
+Course: ART 116 - Design for the Web I
+Description: "HTML Home Page Draft W12 — Published Page"
+
+Revision notes: 
+		I deployed slightly modififed versions of the header and footer which you provided with the contact page feedback.
+		I have been struggling with getting a responsive design in general. It's hard to wrap my head around how vw and vh units seem to render differently with different viewport aspect ratios. The primary issue is with the heights of
+			the section boxes -- they must be the correct height to accomodate the text and elements inside of them and also not too tall, and I can get them to be the correct height with vw or vh so long as I'm testing a specific aspect ratio, 
+			but as soon as I change the width of the viewport (ie stretch the browser window horizantally) it all gets messed up. I'm not sure, but I think the flexbox might scale the height reflexively with an auto setting, but might not be
+			working here because I have a second flexbox nested inside the first one. Not positive.
+		Regardless, this was the problem that using vi units solved for me. I tried to convert my units to em, but, in this case, found that this was unworkable because em units are not proportional to the viewport size in the same way as vi/w/h units
+			are -- rather, as I understand it, they are proportional to the root font size.
+		I believe that vi units are supported by all contemporary builds of major web browsers. What I decided to do was to use @support sections in my css file in order to render the page using vi units, but to allow the page to fallback to vw/h units.
+		With this solution, I believe that it will render correctly at any zoom level or aspect ratio which it is viewed at in contemporary browsers. In case somebody is using an outdated build, I believe the website should render basically correctly
+			if viewed in a portrait-like viewport, but the elements in the boxes will likely spill out of their containers if the viewport is stretched into a landscape-like viewport.
+		I am undecided on how I will proceed for the final submission. I could try to rework everything in vw/vh units and use media-queries to try to adjust the layout accordingly, but I worry about the difficulty in selecting the cut-off points
+			for the various possible viewports and feel like I'll be creating a new paradigm where everything just renders progressively more incorrectly as the viewport size reaches towards the cut-off points, if that makes sense.
+		Alternatively, as I mentioned earlier, perhaps the issue can be solved with better coding. I'm not positive. 
+		-->
+		<title>orangeautumn - crafter, builder, maker</title>
+		<meta name="description" content="Unique, kitschy, retro jewelry and accessories, handmade using repurposed materials. Shop on Etsy and Poshmark for one-of-a-kind clothing, bags, and more.">
+		<!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+		<!-- My CSS file: -->
+        <link href="css/orangeautumnm.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- Header section -->
+		<header>
+			<div class="logo-container">
+				<h1><img src="images/orangeautumn.svg" alt="orange autumn" /></h1>
+			</div>
+			<nav>
+				<a href="http://autumnomatopoeia.etsy.com/" target="_blank" rel="noopener noreferrer">autumnomatopoeia designs on etsy</a>
+				<span aria-hidden="true">•</span>
+				<a href="https://poshmark.com/closet/orangeautumn" target="_blank" rel="noopener noreferrer">poshmark shop</a>
+				<span aria-hidden="true">•</span>
+				<a href="http://orangemarketorgans.etsy.com/" target="_blank" rel="noopener noreferrer">orange market organs on etsy</a>
+				<span aria-hidden="true">•</span>
+				<a href="https://orangeautumn.com/faceplace" target="_blank" rel="noopener noreferrer">facebook</a>
+				<span aria-hidden="true">•</span>
+				<a href="https://instagram.com/orangeautumnshop" target="_blank" rel="noopener noreferrer">instagram</a>
+				<span aria-hidden="true">•</span>
+				<a href="https://orangeautumn.com/pinit" target="_blank" rel="noopener noreferrer">pinterest</a>
+				<br>
+				<a href="ramblings.html">ramblings</a>
+				<span aria-hidden="true">•</span>
+				<a href="#">about me</a>
+				<span aria-hidden="true">•</span>
+				<a href="contactme.html">contact form</a>
+			</nav>
+		</header>
+		<!-- box 1, autumnatopoeia designs -->
+		<section class="flexbox">
+			<aside class="aside_class">
+				<a href="https://www.etsy.com/listing/46304949/the-square-pair-earrings-made-with-2x2"><img src="images/thesquarepair.jpg" alt="Colorful LEGO® brick earrings" class="fixingmypictures"></a>
+				<p class="aside_copy_top"><a href="https://www.etsy.com/listing/46304949/the-square-pair-earrings-made-with-2x2">the square pair</a> — earrings made with 2x2 toy blocks / LEGO® Bricks - pink,  red, orange, yellow, lime, green, blue, black, gray, white, purple</p>
+			</aside>
+			<article class="yellow_box">
+				<h2><a href="http://autumnomatopoeia.etsy.com/">autumnomatopoeia designs on etsy:</a></h2>
+				<p class="article_graf">Your source for the most unique, kitsch + cute, retro inspired jewelry +  accessories, created from an array of repurposed oddities -- from LEGO® bricks to dinosaurs to super balls and everything in between.  Clothing and bags crafted of recycled fabrics and/or adorned with hand cut stencils and appliqués are also an autumnomatopoeia specialty. enjoy!</p>
+				<!-- This div and subsequent divs with the horzline class are aesthetic horizantal lines:-->
+				 <div class="horzline"></div>
+				<section>
+					<h3>see more listings:</h3>
+					<div class="see_more_listings">
+						<a href="https://www.etsy.com/listing/943626048/dinosaur-love-necklace-brontosaurus-hot"><img src="images/dinonecklace.jpg" alt="Brontosaurus and heart pendant necklace pictured on top of a monstera leaf" class="see_more_listings_items"></a>
+						<a href="https://www.etsy.com/listing/64414857/eeep-cockroach-pin-tie-tack-creepy-bug"><img src="images/cockroachpin.jpg" alt="Cockroach pin" class="see_more_listings_items"></a>
+					</div>
+					<div class="see_more_listings_copy_box_top">
+						<p class="see_more_listings_items_copy_top"><a href="https://www.etsy.com/listing/943626048/dinosaur-love-necklace-brontosaurus-hot">dino love necklace</a></p>
+						<p class="see_more_listings_items_copy_top"><a href="https://www.etsy.com/listing/64414857/eeep-cockroach-pin-tie-tack-creepy-bug">eek! cockroach pins</a></p>
+					</div>
+				</section>
+			</article>
+		</section>
+		<!-- box 2, orange market organs -->
+		<section class="flexbox">
+			<article class="blue_box">
+				<h2><a href="https://www.etsy.com/shop/orangemarketorgans/?etsrc=sdt">orangemarketorgans on etsy:</a></h2>
+				<p class="article_graf">I grew up in a household full of crafters. How could I not follow this path? I love making everything. If I go a day without creating something I am not a happy camper.</p>
+				<p class="article_graf_specialvariant">A strange obsession with body parts, anatomy, what have you, was strengthened upon taking an anatomy course during my undergrad years. I started drawing organs, and bones, and such, with a bit of my own  creative license on these beautiful structures. I wanted to learn more about every crevice and corner of our bodies. And I absolutely loved vintage anatomical drawings, think Gray's Anatomy and the like. enjoy!</p>
+				<div class="horzline"></div>
+				<section>
+					<h3>see more listings:</h3>
+					<div class="see_more_listings">
+						<a href="https://www.etsy.com/listing/52048028/lovely-liver-keen-kidney-earrings?show_sold_out_detail=1"><img src="images/keenkidneyearrings.jpg" alt="Kidney earring and liver earring with purple and blue baubles" class="see_more_listings_items"></a>
+						<a href="https://www.etsy.com/listing/53691499/mmm-brains-neon-green-earrings?show_sold_out_detail=1"><img src="images/mmmbrains.jpg" alt="Pair of neon green brain earrings" class="see_more_listings_items"></a>
+					</div>
+					<div class="see_more_listings_copy_box_middle">
+						<p class="see_more_listings_items_copy_middle"><a href="https://www.etsy.com/listing/53691499/mmm-brains-neon-green-earrings?show_sold_out_detail=1">mmm brains - neon<br>green earrings</a></p>
+						<p class="see_more_listings_items_copy_middle"><a href="https://www.etsy.com/listing/52048028/lovely-liver-keen-kidney-earrings?show_sold_out_detail=1">lovely liver, keen<br>kidney earrings</a></p>
+					</div>
+				</section>
+			</article>
+			<aside class="aside_class">
+				<a href="https://www.etsy.com/listing/61811831/bony-hands-skeleton-barrettes?show_sold_out_detail=1"><img src="images/bonyhands.jpg" alt="Pair of skeleton hand barettes" class="fixingmypictures"></a>
+				<p class="aside_copy_middle"><a href="https://www.etsy.com/listing/61811831/bony-hands-skeleton-barrettes?show_sold_out_detail=1">bony hands (skeleton barrettes)</a> — A set of bony skeleton hands have been securely attached to springy silver toned barrette clips. Just waiting to hold your hair! Overall length of each barrette is about 3 inches (about 7.6 cm). Each set includes a pair (2) clips.</p>
+			</aside>
+		</section>
+		<!-- box 3, autumn's closet on poshmark -->
+		<section class="flexbox">
+			<aside class="aside_class">
+				<a href="https://poshmark.com/listing/cherry-berry-cupcake-hairpins-pink-and-sea-green-5ffcfaed7d576c2b0e96250a"><img src="images/cherryberrycupcake.jpg" alt="Pair of pink cupcake barettes with cherries on top" class="fixingmypictures"></a>
+				<p class="aside_copy_bottom"><a href="https://poshmark.com/listing/cherry-berry-cupcake-hairpins-pink-and-sea-green-5ffcfaed7d576c2b0e96250a">super duper cute little cupcakes</a> — for adorning those locks of yours! handmade with repurposed buttons, shades of pink, sea green and bright red, silver toned, sturdy bobby pins.</p>
+			</aside>
+			<article class="orange_box">
+				<h2><a href="https://poshmark.com/closet/orangeautumn">autumn's closet on poshmark:</a></h2>
+				<p class="article_graf">Step into a curated collection of eclectic fashion, where vintage finds meet boutique creations. From one-of-a-kind clothing pieces to quirky knick-knacks, each item is handpicked or crafted with love. Whether you're after bold statement pieces or subtle gems, there's something here to add flair to your wardrobe and home. enjoy!</p>
+				<div class="horzline"></div>
+				<section>
+					<h3>see more listings:</h3>
+					<div class="see_more_listings">
+						<a href="https://poshmark.com/listing/J-Taylor-Black-Cocktail-Party-Dress-Velvet-14-5ffba494691412832b4cecb3"><img src="images/jtaylordress.jpg" alt="Black cocktail dress" class="see_more_listings_items"></a>
+						<a href="https://poshmark.com/listing/IDbadge-clip-made-with-toy-bricks-jet-black-5fb7599e8da5c935bd4e9499"><img src="images/idclip.jpg" alt="ID/badge clip attached to LEGO® brick" class="see_more_listings_items"></a>
+					</div>
+					<div class="see_more_listings_copy_box_bottom">
+						<p class="see_more_listings_items_copy_bottom"><a href="https://poshmark.com/listing/J-Taylor-Black-Cocktail-Party-Dress-Velvet-14-5ffba494691412832b4cecb3">J. Taylor black cocktail<br>party dress velvet (14)</a></p>
+						<p class="see_more_listings_items_copy_bottom"><a href="https://poshmark.com/listing/IDbadge-clip-made-with-toy-bricks-jet-black-5fb7599e8da5c935bd4e9499">ID/badge clip made<br>with toy bricks</a></p>
+					</div>
+				</section>
+			</article>
+		</section>
+		<!-- Footer section: -->
+		<br class="footer_tm"><br class="footer_tm"><br class="footer_tm"><br class="footer_tm"><br class="footer_tm"><br class="footer_tm">
+		<div class="horzline_footer"></div>
+		<footer>
+			<p class="footer_button_row">
+			   
+				<a href="https://orangeautumn.com/faceplace" target="_blank" rel="noopener noreferrer"><img class="fixmybuttons" src="images/facebook.png" alt="Facebook link button"></a> 
+				<a href="https://instagram.com/orangeautumnshop" target="_blank" rel="noopener noreferrer"><img class="fixmybuttons" src="images/instagram.png" alt="Instagram link button"></a> 
+				<a href="https://orangeautumn.com/pinit" target="_blank" rel="noopener noreferrer"><img class="fixmybuttons" src="images/pinterest.png" alt="Pinterest link button"></a>
+			</p>
+			<br class="footer_tm"><br class="footer_tm"><br class="footer_tm">
+			<p class="footer_tm">&copy; 2024 Orange Autumn. All rights reserved.</p>
+			<p class="footer_tm">LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</p>
+		</footer>
+	</body>
+
+</html>

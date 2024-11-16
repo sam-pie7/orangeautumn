@@ -1,0 +1,315 @@
+/* Name: Samantha Jameson
+Date: 11/3/24
+Course: ART 116 - Design for the Web I
+Description: "Home Page - W10" */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 3vi;
+    overflow: hidden;
+}
+
+
+h2 {
+    font-family: 'Podkova';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+h3 {
+    font-family: 'Podkova';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    padding-left: 3vw;
+    position: relative;
+    bottom: .5vh;
+    font-size: 2.25vi;
+}
+
+h2 a:link {
+    color: white !important;
+}
+
+h2 a:visited {
+    color: white !important;
+}
+
+h2 a:hover {
+    color: #756458 !important;
+}
+
+nav {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5vw;
+    position: relative;
+    z-index: 10;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: #F58A3D;
+}
+
+header img {
+    margin-left: 6.5vw;
+    margin-bottom: -20vi;
+    margin-top: -22vi;
+    height: 70vi;
+    width: 70vi;
+    z-index: 0;
+}
+
+body {
+    background-color: rgba(117, 109, 88, 0.45);
+}
+
+p {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+
+aside a:link {
+    color: black;
+}
+
+section a:link {
+    color: black;
+}
+
+section a:visited {
+    color: black;
+}
+
+section a:hover {
+    color: #756458;
+}
+
+footer {
+    font-family: 'Questrial';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+
+.yellow_box {
+    background-color: rgba(245, 191, 61, 0.9);
+    margin-right: 0px;
+    height: 54vi;
+    width: 44.86vw;
+}
+
+.blue_box {
+    background-color: rgba(62, 172, 245, 0.9);
+    flex-basis: 44.86%;
+    margin-right: 0px;
+    height: 69.7vi;
+    width: 44.86vw;
+}
+
+.orange_box {
+    background-color: rgba(245, 138, 61, 0.9);
+    flex-basis: 44.86%;
+    margin-right: 0px;
+    height: 57vi;
+}
+
+.flexbox {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    position: relative;
+    top: 4vh;
+}
+
+.article_graf {
+    font-size: 2vi;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.article_graf_specialvariant {
+    font-size: 2vi;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: -1.2vi;
+}
+
+.aside_class {
+    flex-basis: 55.14%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 0px;
+}
+
+.see_more_listings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    font-size: 1.5vw;
+    gap: 4vi;
+}
+
+.see_more_listings_copy_box_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5vw;
+    gap: 11vi;
+}
+
+.see_more_listings_copy_box_middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5vw;
+    gap: 10vi;
+}
+
+.see_more_listings_copy_box_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5vw;
+    gap: 8vi;
+}
+
+.see_more_listings_items {
+    padding-top: 5vi;
+    padding-bottom: 5vi;
+    padding-right: 0vi;
+    padding-left: 5vi;
+    width: 15vi;
+    height: 15vi;
+    position: relative;
+    bottom: 6vi;
+    left: .7vi;
+}
+
+.see_more_listings_items_copy_top {
+
+    position: relative;
+    bottom: 12vi;
+    right: .5vi;
+    font-size: 1.6vi;
+
+}
+
+.see_more_listings_items_copy_middle {
+
+    position: relative;
+    bottom: 12.5vi;
+    right: 1.5vi;
+    font-size: 1.6vi;
+
+}
+
+.see_more_listings_items_copy_bottom {
+
+    position: relative;
+    bottom: 12vi;
+    left: 0vi;
+    font-size: 1.6vi;
+
+}
+
+.horzline {
+    background-color: white;
+    width: 100%;
+    height: .46vi;
+}
+
+.aside_copy_top {
+    font-size: 2vi;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+}
+
+.aside_copy_top a:hover {
+    color: white;
+}
+
+.aside_copy_middle {
+    font-size: 2.25vi;
+    padding-left: 2vw;
+    position: relative;
+    top: 2vi;
+}
+
+.aside_copy_middle a:hover {
+    color: white;
+}
+
+.aside_copy_bottom {
+    font-size: 1.8vi;
+    padding-right: 1.5vw;
+    position: relative;
+    bottom: 1.6vh;
+}
+
+.aside_copy_bottom a:hover {
+    color: white;
+}
+
+.horzline_footer {
+    background-color: white;
+    width: 99.5vw;
+    height: .46vi;
+    position: relative;
+    top: 3.5vi;
+}
+
+.footerbr {
+    font-size: 1vi;
+}
+.footer_arrow {
+    font-size: 10vw;
+}
+
+.footer_tm {
+    width: 65%;
+    float: right;
+    font-size: 2vw;
+    position: relative;
+    bottom: 9vi;
+    text-align: right;
+    padding-right: 1vw;
+}
+
+footer img {
+    width: 6vi;
+    height: 6vi;
+}
+
+.footer_button_row {
+    position: relative;
+    top: 3vi;
+}
+
+.fixingmypictures {
+    width: 100%
+
+}
+
+.fixmypictures2 {
+    border: black;
+}

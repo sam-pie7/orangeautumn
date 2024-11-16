@@ -1,0 +1,147 @@
+/*
+Name: Samantha Jameson
+Date: 11/3/24
+Course: ART 116 - Design for the Web I
+Description: "Contact Page - W10
+*/
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 3vi;
+    overflow: hidden;
+}
+
+
+h2 {
+    font-family: 'Podkova';
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    color: white;
+    font-size: 4.5vi;
+    margin-bottom: .8vi;
+    margin-top: .8vi;
+}
+
+nav {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5vi;
+    position: relative;
+    z-index: 10;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: #F58A3D;
+}
+
+header img {
+    margin-left: 6.5vw;
+    margin-bottom: -20vi;
+    margin-top: -22vi;
+    height: 70vi;
+    width: 70vi;
+    z-index: 0;
+}
+
+body {
+    background-color: rgba(117, 109, 88, 0.45);
+}
+
+p {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+    background-color: rgba(245, 138, 61, 0.9);
+    padding-top: .5vi;
+    padding-bottom: .5vi;
+    padding-left: 6vi;
+    padding-right: 6vi;
+    margin: 4vi;
+}
+
+input {
+    font-family: "Questrial";
+    font-size: 1.5vi;
+}
+
+form {
+    margin-bottom: .8vi;
+}
+
+textarea {
+    width: 99.4%;
+    margin-bottom: .8vi;
+    font-size: 1.5vi;
+    font-family: "Questrial";
+}
+
+.namefield {
+    width: 48%;
+    float: left;
+    padding-right: 0;
+    margin-bottom: .8vi;
+    line-height: 2vi;
+    z-index: 1000;
+}
+
+.emailfield {
+    width: 48%;
+    float: right;
+    padding-left: 0;
+    margin-bottom: .8vi;
+    line-height: 2vi;
+}
+
+footer {
+    font-family: 'Questrial';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5vi;
+    margin-top: .1vi;
+}
+
+.horzline_footer {
+    background-color: white;
+    width: 99.5vw;
+    height: .46vi;
+}
+
+.footer_tm {
+    width: 65%;
+    float: right;
+    font-size: 2vw;
+    position: relative;
+    bottom: 8vi;
+    text-align: right;
+    padding-right: 1vw;
+}
+
+footer img {
+    width: 6vi;
+    height: 6vi;
+}
+
+.footer_arrow {
+    font-size: 10vw;
+}
+
+.footer_button_row {
+    position: relative;
+    top: 3vi;
+}

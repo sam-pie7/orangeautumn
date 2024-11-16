@@ -1,0 +1,534 @@
+/*
+Name: Samantha Jameson
+Date: 11/16/2024
+Course: ART 116 - Design for the Web I
+Description: "HTML Home Page Draft W12 — Published Page"
+*/
+
+.logo-container {
+    max-width: 100%; /* Limit the width of the logo container */
+    text-align: center; /* Center the logo within the container */
+}
+
+.logo-container img {
+    max-width: 50%; /* Ensure the logo does not exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is a block element for centering */
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 3vh; 
+    overflow: hidden;
+}
+
+@supports (top: 3vi) {
+    .h1 {
+      top: 3vi;
+    }
+  }
+  
+  @supports not (top: 3vi) {
+    .h1 {
+      top: 3vh;
+    }
+  }
+
+nav {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5vw; 
+    position: relative;
+    z-index: 10;
+    margin-top: 3vh; 
+}
+
+@supports (margin-top: 3vi) {
+    nav {
+      font-family: 'Josefin Sans';
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      font-size: 1.5vw;  
+      position: relative;
+      z-index: 10;
+      margin-top: 3vi; 
+    }
+  }
+
+h2 {
+    font-family: 'Podkova';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+h3 {
+    font-family: 'Podkova';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    padding-left: 3vw;
+    position: relative;
+    bottom: .5vh;
+    font-size: 2.25vw;
+}
+
+@supports (font-size: 2.25vi) {
+    h3 {
+      font-family: 'Josefin Sans';
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      font-size: 2vi;  /* Use vi units */
+      position: relative;
+      z-index: 10;
+      margin-top: 3vi; /* Use vi units */
+    }
+  }
+
+h2 a:link {
+    color: white !important;
+}
+
+h2 a:visited {
+    color: white !important;
+}
+
+h2 a:hover {
+    color: #756458 !important;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: #F58A3D;
+}
+
+body {
+    background-color: rgba(117, 109, 88, 0.45);
+}
+
+p {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+
+aside a:link {
+    color: black;
+}
+
+section a:link {
+    color: black;
+}
+
+section a:visited {
+    color: black;
+}
+
+section a:hover {
+    color: #756458;
+}
+
+footer {
+    padding: 2em 0; 
+    text-align: center; 
+    font-family: 'Questrial';
+    color: white; 
+	min-width: 100%;
+}
+
+ .yellow_box {
+    background-color: rgba(245, 191, 61, 0.9);
+    margin-right: 0px;
+    height: 56vh;
+    width: 44.86vw;
+} 
+
+@supports (height: 54vi) {
+    .yellow_box {
+        background-color: rgba(245, 191, 61, 0.9);
+        margin-right: 0px;
+        height: 54vi;
+        width: 44.86vw;
+    }
+  }
+
+
+.blue_box {
+    background-color: rgba(62, 172, 245, 0.9);
+    flex-basis: 44.86%;
+    margin-right: 0px;
+    height: 73.7vh;
+    width: 44.86vw;
+}
+
+@supports (height: 69.7vi) {
+    .blue_box {
+        background-color: rgba(62, 172, 245, 0.9);
+        flex-basis: 44.86%;
+        margin-right: 0px;
+        height: 69.7vi;
+        width: 44.86vw;
+    }
+  }
+
+.orange_box {
+    background-color: rgba(245, 138, 61, 0.9);
+    flex-basis: 44.86%;
+    margin-right: 0px;
+    height: 62vh;
+}
+
+@supports (height: 57vi) {
+    .orange_box {
+        background-color: rgba(245, 138, 61, 0.9);
+        flex-basis: 44.86%;
+        margin-right: 0px;
+        height: 57vi;
+    }
+  }
+
+.flexbox {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    position: relative;
+    top: 4vh;
+}
+
+.article_graf {
+    font-size: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+@supports (font-size: 2vi) {
+    .article_graf {
+        font-size: 2vi;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+  }
+
+.article_graf_specialvariant {
+    font-size: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: -1.2vh;
+}
+
+@supports (margin-top: -1.2vi) {
+    .article_graf_specialvariant {
+        font-size: 2vi;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        margin-top: -1.2vi;
+    }
+  }
+
+.aside_class {
+    flex-basis: 55.14%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 0px;
+}
+
+.see_more_listings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    font-size: 1.5vw;
+    gap: 4vw;
+}
+
+@supports (gap: 4vi) {
+    .see_more_listings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 86%;
+        font-size: 1.5vw;
+        gap: 4vi;
+    }
+  }
+
+.see_more_listings_copy_box_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5vw;
+    gap: 11vw;
+}
+
+@supports (gap: 11vi) {
+    .see_more_listings_copy_box_top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 1.5vw;
+        gap: 11vi;
+    }
+  }
+
+.see_more_listings_copy_box_middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5vw;
+    gap: 10vw;
+}
+
+@supports (gap: 10vi) {
+    .see_more_listings_copy_box_middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 1.5vw;
+        gap: 10vi;
+    }
+  }
+
+.see_more_listings_copy_box_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5vw;
+    gap: 8vw;
+}
+
+@supports (gap: 8vi) {
+    .see_more_listings_copy_box_bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 1.5vw;
+        gap: 8vi;
+    }
+  }
+
+.see_more_listings_items {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 0vw;
+    padding-left: 5vw;
+    width: 15vw;
+    height: 15vh;
+    position: relative;
+    bottom: 6vh;
+    left: .7vw;
+}
+
+@supports (width: 15vi) {
+    .see_more_listings_items {
+        padding-top: 5vi;
+        padding-bottom: 5vi;
+        padding-right: 0vi;
+        padding-left: 5vi;
+        width: 15vi;
+        height: 15vi;
+        position: relative;
+        bottom: 6vi;
+        left: .7vi;
+    }
+  }
+
+.see_more_listings_items_copy_top {
+
+    position: relative;
+    bottom: 12vh;
+    right: .5vw;
+    font-size: 1.6vw;
+
+}
+
+@supports (bottom: 12vi) {
+    .see_more_listings_items_copy_top {
+        position: relative;
+        bottom: 12vi;
+        right: .5vi;
+        font-size: 1.6vi;
+    }
+  }
+
+.see_more_listings_items_copy_middle {
+
+    position: relative;
+    bottom: 12.5vh;
+    right: 1.5vw;
+    font-size: 1.6vw;
+
+}
+
+@supports (bottom: 12.5vi) {
+    .see_more_listings_items_copy_middle {
+        position: relative;
+        bottom: 12.5vi;
+        right: 1.5vi;
+        font-size: 1.6vi;
+    }
+  }
+
+.see_more_listings_items_copy_bottom {
+
+    position: relative;
+    bottom: 12vi;
+    left: 0vi;
+    font-size: 1.6vi;
+
+}
+
+@supports (bottom: 12vi) {
+    .see_more_listings_items_copy_bottom {
+        position: relative;
+        bottom: 12vi;
+        left: 0vi;
+        font-size: 1.6vi;
+    }
+  }
+
+.horzline {
+    background-color: white;
+    width: 100%;
+    height: .46vh;
+}
+
+@supports (height: .46vi) {
+    .horzline {
+        background-color: white;
+        width: 100%;
+        height: .46vi;
+    }
+  }
+
+.aside_copy_top {
+    font-size: 2vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+}
+
+@supports (font-size: 2vi) {
+    .aside_copy_top {
+        font-size: 2vi;
+        padding-right: 1.5vw;
+        padding-left: 1.5vw;
+    }
+  }
+
+.aside_copy_top a:hover {
+    color: white;
+}
+
+.aside_copy_middle {
+    font-size: 2.25vw;
+    padding-left: 2vw;
+    position: relative;
+    top: 2vh;
+}
+
+@supports (top: 2vi) {
+    .aside_copy_middle {
+        font-size: 2.25vi;
+        padding-left: 2vw;
+        position: relative;
+        top: 2vi;
+    }
+  }
+
+.aside_copy_middle a:hover {
+    color: white;
+}
+
+.aside_copy_bottom {
+    font-size: 1.8vw;
+    padding-right: 1.5vw;
+    position: relative;
+    bottom: 1.6vh;
+}
+
+@supports (top: 2vi) {
+    .aside_copy_bottom {
+        font-size: 1.8vi;
+        padding-right: 1.5vw;
+        position: relative;
+        bottom: 1.6vh;
+    }
+  }
+
+.aside_copy_bottom a:hover {
+    color: white;
+}
+
+.horzline_footer {
+    background-color: white;
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the line */
+    margin: 0 auto; /* Center the line */
+}
+
+.footer_button_row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons horizontally */
+    margin-bottom: 1em; /* Space below the icon row */
+}
+
+.footer_button_row a {
+    margin: 0 1em; /* Space between the icons */
+}
+
+footer img {
+    width: 6em; /* Icon size */
+    height: 6em; /* Icon size */
+}
+
+.footer_tm {
+    font-size: 1.2em; /* Smaller font size for copyright text */
+    margin-top: 0.5em; /* Space above the copyright text */
+    color: white; /* Ensure text is readable */
+}
+
+@supports (font-size: 2.5vi) {
+    .footer_tm {
+        font-size: 1.5vi;
+        padding-right: 1.5vw;
+        position: relative;
+        bottom: 1.6vh;
+    }
+  }
+
+.fixingmypictures {
+    width: 100%;
+
+}
+
+.fixmybuttons {
+    width: 7vw;
+    height: 7vh
+}
+
+@supports (width: 7vw) {
+    .fixmybuttons {
+        width: 7vi;
+        height: 7vi
+    }
+  }

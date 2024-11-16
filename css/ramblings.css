@@ -1,0 +1,161 @@
+/*
+Name: Samantha Jameson
+Date: 11/16/2024
+Course: ART 116 - Design for the Web I
+Description: "HTML Home Page Draft W12 — Published Page"
+*/
+
+.logo-container {
+    max-width: 100%; /* Limit the width of the logo container */
+    text-align: center; /* Center the logo within the container */
+}
+
+.logo-container img {
+    max-width: 50%; /* Ensure the logo does not exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is a block element for centering */
+}
+
+nav {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5vw; 
+    position: relative;
+    z-index: 10;
+    margin-top: 3vh; 
+}
+
+@supports (margin-top: 3vi) {
+    nav {
+      font-family: 'Josefin Sans';
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      font-size: 1.5vw;  
+      position: relative;
+      z-index: 10;
+      margin-top: 3vi; 
+    }
+  }
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 3vh; 
+    overflow: hidden;
+}
+
+h2 {
+    font-family: 'Podkova';
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-size: 2.5vw;
+    margin: 0vw;
+    padding: 0vi;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: #F58A3D;
+}
+
+body {
+    background-color: rgba(117, 109, 88, 0.45);
+}
+
+p {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.75vw;
+}
+
+footer {
+    padding: 2em 0; 
+    text-align: center; 
+    font-family: 'Questrial';
+    color: white; 
+	min-width: 100%;
+}
+
+@supports (top: 3vi) {
+    .h1 {
+      top: 3vi;
+    }
+  }
+
+.blue_box {
+    background-color: rgba(62, 172, 245, 0.9);
+    padding: 3vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 2.5vw;
+    margin-bottom: 0vw;
+}
+
+.yellow_box {
+    background-color: rgba(245, 191, 61, 0.9);
+    padding: 3vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 0;
+    margin-bottom: 2.5vw;
+}
+
+.horzline_footer {
+    background-color: white;
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the line */
+    margin: 0 auto; /* Center the line */
+}
+
+.footer_button_row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons horizontally */
+    margin-bottom: 1em; /* Space below the icon row */
+}
+
+.footer_button_row a {
+    margin: 0 1em; /* Space between the icons */
+}
+
+.fixmybuttons {
+    width: 7vw;
+    height: 7vh
+}
+
+@supports (width: 7vw) {
+    .fixmybuttons {
+        width: 7vi;
+        height: 7vi
+    }
+  }
+
+  .footer_tm {
+    font-size: 1.2em; /* Smaller font size for copyright text */
+    margin-top: 0.5em; /* Space above the copyright text */
+    color: white; /* Ensure text is readable */
+}
+
+@supports (font-size: 2.5vi) {
+    .footer_tm {
+        font-size: 1.5vi;
+        padding-right: 1.5vw;
+        position: relative;
+        bottom: 1.6vh;
+    }
+  }
+
+

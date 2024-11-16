@@ -1,0 +1,189 @@
+/*
+Name: Samantha Jameson
+Date: 11/16/2024
+Course: ART 116 - Design for the Web I
+Description: "HTML Home Page Draft W12 — Published Page"
+*/
+
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in element dimensions */
+}
+
+header {
+    display: block; /* Ensure the header is block-level */
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 3vh; 
+    overflow: hidden;
+}
+
+.logo-container {
+    max-width: 100%; /* Limit the width of the logo container */
+    text-align: center; /* Center the logo within the container */
+}
+
+.logo-container img {
+    max-width: 50%; /* Ensure the logo does not exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is a block element for centering */
+}
+
+nav {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5vw; 
+    position: relative;
+    z-index: 10;
+    margin-top: 3vh; 
+}
+
+nav a:link,
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: #F58A3D;
+}
+
+h2 {
+    font-family: 'Podkova';
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    color: white;
+    font-size: 4.5em; /* Use em instead of vi */
+    margin-bottom: 0.8em; /* Use em instead of vi */
+    margin-top: 0.8em; /* Use em instead of vi */
+}
+
+body {
+    background-color: rgba(117, 109, 88, 0.45);
+}
+
+p {
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+    background-color: rgba(245, 138, 61, 0.9);
+    padding-top: 0.5em; /* Use em instead of vi */
+    padding-bottom: 0.5em; /* Use em instead of vi */
+    padding-left: 6em; /* Use em instead of vi */
+    padding-right: 6em; /* Use em instead of vi */
+    margin: 4em; /* Use em instead of vi */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    margin-bottom: 0.8em; /* Use em instead of vi */
+}
+
+input, textarea {
+    font-family: "Questrial";
+    font-size: 1.5em; /* Use em instead of vi */
+    width: 100%; /* Set default width to 100% */
+    padding: 0.5em; /* Add padding for better spacing */
+    margin-bottom: 1em; /* Increase space between fields */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+textarea {
+    height: 150px; /* Set a fixed height for the textarea */
+    resize: none; /* Disable resizing */
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #F58A3D; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 1.5em; /* Use em instead of vi */
+    padding: 0.5em; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #d5722f; /* Darker shade on hover */
+}
+
+input[type="submit"] {
+    background-color: blue; /* Set background color to blue */
+    color: white; /* Button text color */
+    font-size: 1.5em; /* Use em instead of vi */
+    padding: 0.5em; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    margin-right: 1em; /* Add space between buttons */
+}
+
+input[type="reset"] {
+    background-color: red; /* Set background color to red */
+    color: white; /* Button text color */
+    font-size: 1.5em; /* Use em instead of vi */
+    padding: 0.5em; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue; /* Darker shade on hover for submit */
+}
+
+input[type="reset"]:hover {
+    background-color: darkred; /* Darker shade on hover for reset */
+}
+
+textarea {
+    width: 100%; /* Ensure textarea is full width */
+}
+
+footer {
+    padding: 2em 0; /* Padding for top and bottom */
+    text-align: center; /* Center text in footer */
+    font-family: 'Questrial';
+    color: white; /* Change footer text color for better visibility */
+	min-width: 100%;
+}
+
+.footer_button_row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons horizontally */
+    margin-bottom: 1em; /* Space below the icon row */
+}
+
+.footer_button_row a {
+    margin: 0 1em; /* Space between the icons */
+}
+
+footer img {
+    width: 6em; /* Icon size */
+    height: 6em; /* Icon size */
+}
+
+.footer_tm {
+    font-size: 1.2em; /* Smaller font size for copyright text */
+    margin-top: 0.5em; /* Space above the copyright text */
+    color: white; /* Ensure text is readable */
+}
+
+/* Optional: Add a horizontal line to separate from content above */
+.horzline_footer {
+    background-color: white;
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the line */
+    margin: 0 auto; /* Center the line */
+}
