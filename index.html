@@ -9,22 +9,9 @@
 Name: Samantha Jameson
 Date: 11/16/2024
 Course: ART 116 - Design for the Web I
-Description: "HTML Home Page Draft W12 — Published Page"
+Description: "HTML Home Page Draft W14 — Published Page"
 
-Revision notes: 
-		I deployed slightly modififed versions of the header and footer which you provided with the contact page feedback.
-		I have been struggling with getting a responsive design in general. It's hard to wrap my head around how vw and vh units seem to render differently with different viewport aspect ratios. The primary issue is with the heights of
-			the section boxes -- they must be the correct height to accomodate the text and elements inside of them and also not too tall, and I can get them to be the correct height with vw or vh so long as I'm testing a specific aspect ratio, 
-			but as soon as I change the width of the viewport (ie stretch the browser window horizantally) it all gets messed up. I'm not sure, but I think the flexbox might scale the height reflexively with an auto setting, but might not be
-			working here because I have a second flexbox nested inside the first one. Not positive.
-		Regardless, this was the problem that using vi units solved for me. I tried to convert my units to em, but, in this case, found that this was unworkable because em units are not proportional to the viewport size in the same way as vi/w/h units
-			are -- rather, as I understand it, they are proportional to the root font size.
-		I believe that vi units are supported by all contemporary builds of major web browsers. What I decided to do was to use @support sections in my css file in order to render the page using vi units, but to allow the page to fallback to vw/h units.
-		With this solution, I believe that it will render correctly at any zoom level or aspect ratio which it is viewed at in contemporary browsers. In case somebody is using an outdated build, I believe the website should render basically correctly
-			if viewed in a portrait-like viewport, but the elements in the boxes will likely spill out of their containers if the viewport is stretched into a landscape-like viewport.
-		I am undecided on how I will proceed for the final submission. I could try to rework everything in vw/vh units and use media-queries to try to adjust the layout accordingly, but I worry about the difficulty in selecting the cut-off points
-			for the various possible viewports and feel like I'll be creating a new paradigm where everything just renders progressively more incorrectly as the viewport size reaches towards the cut-off points, if that makes sense.
-		Alternatively, as I mentioned earlier, perhaps the issue can be solved with better coding. I'm not positive. 
+Final submission
 		-->
 		<title>orangeautumn - crafter, builder, maker</title>
 		<meta name="description" content="Unique, kitschy, retro jewelry and accessories, handmade using repurposed materials. Shop on Etsy and Poshmark for one-of-a-kind clothing, bags, and more.">
@@ -58,7 +45,7 @@ Revision notes:
 				<br>
 				<a href="ramblings.html">ramblings</a>
 				<span aria-hidden="true">•</span>
-				<a href="#">about me</a>
+				<a href="aboutme.html">about me</a>
 				<span aria-hidden="true">•</span>
 				<a href="contactme.html">contact form</a>
 			</nav>
